@@ -21,4 +21,4 @@ cursorObject = dataBase.cursor()
 cursorObject.execute("CREATE DATABASE crud_django")
 
 # print success
-print("All Done!")
+print("Success Created")
