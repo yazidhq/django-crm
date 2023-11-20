@@ -10,7 +10,7 @@
   <form method="POST" action="{% url 'add_record' %}">
     {% csrf_token %}
 
-    <!-- render -->
+    <!-- render form -->
     {{ form.as_p }}
 
     <br />

@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+
+{% block title %} Update {{ current_record.first_name }} {% endblock %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+    <h1>Update Record {{ current_record.first_name }}</h1>
+    <br />
+    <form method="POST" action="{% url 'update_record' current_record.id %}">
+      {% csrf_token %}
+  
+      <!-- render form -->
+      {{ form.as_p }}
+  
+      <br />
+      <button type="submit" class="btn btn-success">Submit Record</button>
+      <a href="{% url 'record' current_record.id %}" type="submit" class="btn btn-secondary">Back</a>
+    </form>
+  </div>
+
+{% endblock %}

@@ -10,8 +10,6 @@
 
   <table class="table table-striped table-hover table-bordered">
     <thead>
-      <tr>
-        <th scope="col">#</th>
         <th scope="col">First Name</th>
         <th scope="col">Last Name</th>
         <th scope="col">Email</th>
@@ -28,7 +26,6 @@
       {% if records %}
         {% for record in records %}
           <tr>
-            <th scope="row">1</th>
             <td>{{ record.first_name }}</td>
             <td>{{ record.last_name }}</td>
             <td>{{ record.email }}</td>
