@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 
-{% block title %} REgister {% endblock %}
+{% block title %} Register {% endblock %}
 
 {% block content %}
 
@@ -8,7 +8,7 @@
   <h1>Register</h1>
   <br />
 
-  <form method="POST" action="">
+  <form method="POST" action="{% url 'register' %}">
     {% csrf_token %}
 
     <!-- if error -->
